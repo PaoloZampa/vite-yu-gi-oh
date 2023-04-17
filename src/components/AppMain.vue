@@ -1,12 +1,21 @@
 <script>
+
+import YugiohCardList from "./YugiohCardList.vue";
+import { store } from "../store";
 export default {
     name: 'AppMain',
+    components: { YugiohCardList },
+    data() {
+        return {
+            store
+        }
+    }
 }
 </script>
 
 <template>
     <main>
-        <h1>AppMain</h1>
+        <YugiohCardList :yugiohCard="store.yugiohCards"></YugiohCardList>
     </main>
 </template>
 

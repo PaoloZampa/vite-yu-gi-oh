@@ -5,8 +5,8 @@ export default {
 </script>
 
 <template>
-    <header class="text-center py-5">
-        <h1>AppHeader</h1>
+    <header class="py-5">
+        <h1>YuGiOh API</h1>
     </header>
 </template>
 
