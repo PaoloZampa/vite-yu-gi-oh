@@ -15,7 +15,7 @@ export default {
 
 <template>
     <section class="container">
-        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5">
 
             <!-- cardItem -->
             <YugiohCardItem :yugiohCard="yugiohCard" v-for="yugiohCard in store.yugiohCards" v-if="!store.loading"></YugiohCardItem>
@@ -27,3 +27,9 @@ export default {
         </div>
     </section>
 </template>
+
+<style lang="scss" scoped>
+
+
+
+</style>
