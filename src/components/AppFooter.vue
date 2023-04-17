@@ -6,8 +6,14 @@ export default {
 
 <template>
     <footer>
-        <h1>AppFooter</h1>
     </footer>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@use '../assets/scss/partials/variables' as *;
+
+footer {
+    height: 60px;
+    background-color: $primary;
+}
+</style>

@@ -5,13 +5,16 @@ export default {
 </script>
 
 <template>
-    <header class="py-5">
-        <h1>YuGiOh API</h1>
+    <header class="d-flex align-items-center">
+        <img src="../assets/img/yugioh-logo.png" alt="">
+        <h1>Yu-Gi-Oh API</h1>
     </header>
 </template>
 
 <style lang="scss" scoped>
+@use '../assets/scss/partials/variables' as *;
 
-
-
+img {
+    height: 80px;
+}
 </style>

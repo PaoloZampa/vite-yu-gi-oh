@@ -8,7 +8,7 @@ export default {
 </script>
 
 <template>
-    <div class="col my-3">
+    <div class="col mb-3">
         <div class="YugiohCardItem text-center">
             <img class="img-fluid" :src="yugiohCard.card_images[0].image_url" :alt="yugiohCard.name">
             <div class="text p-1">
@@ -21,14 +21,13 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/scss/partials/variables' as *;
-.YugiohCardItem{
+
+.YugiohCardItem {
     background-color: $primary;
-    margin: 1rem auto;
     height: 100%;
 
-    h5{
+    h5 {
         color: white;
     }
 }
-
 </style>
