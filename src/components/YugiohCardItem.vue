@@ -10,9 +10,9 @@ export default {
 <template>
     <div class="col">
         <div class="YugiohCardItem text-center">
-            <img class="img-fluid" :src="yugiohCard.card_images.image_url_small" >
+            <img class="img-fluid" :src="yugiohCard.card_images[0].image_url" :alt="yugiohCard.name">
             <div class="text">
-                <h3>{{yugiohCard.name  }}</h3>
+                <h3>{{ yugiohCard.name }}</h3>
                 <div class="archetype">{{ yugiohCard.archetype }}</div>
             </div>
         </div>

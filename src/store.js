@@ -10,7 +10,7 @@ export const store = reactive({
                 .then(response => {
                     console.log(response.data.data);
                     this.yugiohCards = response.data.data
-                    console.log(response.data.data[2400].card_images);
+                    console.log(response.data.data[2400].card_images[0].image_url);
                     this.loading = false
                 })
                 .catch(err => {
