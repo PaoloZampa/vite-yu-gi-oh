@@ -17,19 +17,14 @@ export default {
     <main>
 
         <div class="container">
-            <div class="dropdown_item">
-                <div class="dropdown">
-                    <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Dropdown button
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </div>
-            </div>
+            <label for="cars">Chose and Archetype</label>
+            <select name="cars" id="cars">
+                <option value="Roid">Roid</option>
+                <option value="Dark Magician">Dark Magician</option>
+                <option value="Cyber Dragon">Cyber Dragon</option>
+                <option value="Blackwing">Blackwing</option>
+            </select>
+
         </div>
 
         <YugiohCardList :yugiohCard="store.yugiohCards"></YugiohCardList>
@@ -42,9 +37,5 @@ export default {
 
 main {
     background-color: $primary;
-
-    .dropdown_item {
-        padding: 2rem 0;
-    }
 }
 </style>
