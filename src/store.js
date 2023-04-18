@@ -4,8 +4,9 @@ import axios from 'axios';
 export const store = reactive({
     loading: true,
     API_URL: 'https://db.ygoprodeck.com/api/v7/cardinfo.php?num=40&offset=10243',
-    archetype_url: 'https://db.ygoprodeck.com/api/v7/cardinfo.php',
+    archetype_url: 'https://db.ygoprodeck.com/api/v7/archetypes.php',
     yugiohCards: null,
+    choseArchetype: null,
     generateCards(url) {
         axios.get(url)
             .then(response => {

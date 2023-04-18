@@ -2,6 +2,7 @@
 
 import YugiohCardList from "./YugiohCardList.vue";
 import { store } from "../store";
+import axios from "axios";
 export default {
     name: 'AppMain',
     components: { YugiohCardList },
@@ -18,7 +19,7 @@ export default {
 
         <div class="container">
             <label for="cars">Chose and Archetype</label>
-            <select name="cars" id="cars">
+            <select name="choseArchetype" id="choseArchetype" v-model="store.choseArchetype">
                 <option value="Roid">Roid</option>
                 <option value="Dark Magician">Dark Magician</option>
                 <option value="Cyber Dragon">Cyber Dragon</option>
