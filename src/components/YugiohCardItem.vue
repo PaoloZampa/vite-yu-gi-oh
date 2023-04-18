@@ -25,6 +25,9 @@ export default {
 .YugiohCardItem {
     background-color: $primary;
     height: 100%;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
+    border-radius: 0 0 7px 7px;
 
     h5 {
         color: white;
